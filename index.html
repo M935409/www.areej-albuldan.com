@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مؤسسة أريج البلدان</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        .social-button {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 9999px;
+        }
+
+        .social-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-button.whatsapp {
+            background-color: #25D366;
+        }
+
+        .social-button.whatsapp:hover {
+            background-color: #1ebe5b;
+        }
+
+        .social-button.location:hover {
+            background-color: #c62828;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-6 sm:p-8 text-center shadow-2xl rounded-b-3xl">
+        <img src="logo mu.jpg" alt="شعار مؤسسة أريج البلدان"
+             class="w-24 h-24 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-white shadow-lg mx-auto mb-4 sm:mb-6 transform hover:scale-105 transition-transform duration-300">
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-2 sm:mb-3 leading-tight">مؤسسة أريج البلدان</h1>
+        <p class="text-lg sm:text-2xl font-light opacity-90">شريككم الموثوق لخدمات متكاملة وحلول مبتكرة</p>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center py-8 sm:py-12 px-4">
+        <section class="max-w-4xl text-center mb-10 sm:mb-12">
+            <h2 class="text-2xl sm:text-4xl font-bold text-blue-700 mb-4 sm:mb-6">نحن هنا لخدمتكم</h2>
+            <p class="text-base sm:text-xl leading-relaxed text-gray-700 mb-6 sm:mb-8">
+                تقدم مؤسسة أريج البلدان مجموعة واسعة من الخدمات المتكاملة التي تلبي احتياجاتكم المتنوعة.
+                نسعى دائمًا لتقديم أفضل الحلول بجودة عالية واحترافية تامة.
+            </p>
+        </section>
+
+      <div class="flex flex-row justify-center items-center gap-4 mt-4">
+  <!-- زر الموقع بشكل دائري -->
+  <a href="https://maps.app.goo.gl/bADvjiGZRHWjjekZ6" target="_blank" title="موقعنا"
+     class="social-button inline-flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 text-white text-xs sm:text-sm
+            focus:outline-none focus:ring-4 focus:ring-blue-300 bg-blue-600 rounded-full">
+    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="الموقع"
+         class="w-6 h-6 sm:w-7 sm:h-7 mb-1">
+    <span class="text-[10px] sm:text-xs font-medium">الموقع</span>
+  </a>
+
+  <!-- زر واتساب بشكل دائري -->
+  <a href="https://wa.me/966544878050" target="_blank" title="تواصل عبر واتساب"
+     class="social-button inline-flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 text-white text-xs sm:text-sm
+            focus:outline-none focus:ring-4 focus:ring-green-300 bg-green-600 rounded-full">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب"
+         class="w-6 h-6 sm:w-7 sm:h-7 mb-1">
+    <span class="text-[10px] sm:text-xs font-medium">واتساب</span>
+  </a>
+</div>
+<!-- قسم من نحن -->
+<section id="about-us" class="mt-10 px-4">
+  <h2 class="text-center text-2xl font-bold mb-4">من نحن</h2>
+
+  <div class="grid grid-cols-2 gap-4">
+    <!-- الصور من 1 إلى 21 -->
+    <img src="1.jpg" alt="صورة 1" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="2.jpg" alt="صورة 2" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="3.jpg" alt="صورة 3" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="4.jpg" alt="صورة 4" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="5.jpg" alt="صورة 5" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="6.jpg" alt="صورة 6" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="7.jpg" alt="صورة 7" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="8.jpg" alt="صورة 8" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="9.jpg" alt="صورة 9" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="10.jpg" alt="صورة 10" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="11.jpg" alt="صورة 11" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="12.jpg" alt="صورة 12" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="13.jpg" alt="صورة 13" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="14.jpg" alt="صورة 14" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="15.jpg" alt="صورة 15" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="16.jpg" alt="صورة 16" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="17.jpg" alt="صورة 17" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="18.jpg" alt="صورة 18" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="19.jpg" alt="صورة 19" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="20.jpg" alt="صورة 20" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+    <img src="21.jpg" alt="صورة 21" class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-200" onclick="openImage(this.src)">
+  </div>
+</section>
+
+<!-- نافذة تكبير الصورة -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden" onclick="closeImage()">
+  <img id="modalImage" src="" class="max-w-full max-h-full rounded-lg border-4 border-white">
+</div>
+
+<!-- سكربت لتكبير الصورة -->
+<script>
+  function openImage(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+  function closeImage() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+        </div>
+    </main>
+
+    <footer class="mt-auto p-6 sm:p-8 bg-blue-100 text-blue-800 text-center rounded-t-3xl shadow-inner">
+        <div class="container mx-auto">
+            <p class="mt-4 sm:mt-6 text-sm sm:text-base opacity-90">جميع الحقوق محفوظة © 2025 مؤسسة أريج البلدان</p>
+        </div>
+    </footer>
+
+</body>
+</html>
